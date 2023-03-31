@@ -7,11 +7,12 @@ import { PORT } from "./config.js";
 import indexRoutes from "./routes/index.routes.js";
 import taskRoutes from "./routes/tasks.routes.js";
 
+
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 console.log(__dirname)
 
-app.use(cors());
+app.use(cors({origin:  'http://5.183.11.6:5173'}));
 app.use(express.json());
 
 app.use(indexRoutes);
