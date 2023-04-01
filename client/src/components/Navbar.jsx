@@ -12,7 +12,7 @@ function Navbar() {
          
         </li>
         <li>
-          <Link to="/new" className="bg-teal-200 px-2 py-1">Crear Nueva Solictud</Link>
+          <Link to="/new" className="bg-teal-200 px-2 py-1">Crear</Link>
         </li>
       </ul>
     </div>

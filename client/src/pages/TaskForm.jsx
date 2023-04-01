@@ -178,14 +178,14 @@ function TaskForm() {
               value={values.correoelectronico}
             />
 
-            <label  className="block" htmlFor="gestante">Gestante : </label>
+            <label  className="block" htmlFor="gestante">Gestante ? : </label>
             <select name="gestante" onChange={handleChange} value={values.gestante}>
               <option value="">Gestante ? </option>
               <option value="SI">Si</option>
               <option value="No">No</option>
             </select>
 
-            <label className="block" htmlFor="pertenece_programa">pertenece a un programa </label>
+            <label className="block" htmlFor="pertenece_programa">Pertenece a un programa? </label>
             <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa}>
 
               <option value="No pertenezco a algún programa">No pertenezco a algún programa </option>
@@ -199,7 +199,7 @@ function TaskForm() {
 
 
 
-Gestantes
+
 
             <label className="block" htmlFor="especialidad_formulo_medicamento">
               Especialidad quien Formulo el Medicamento </label>
@@ -259,7 +259,7 @@ Gestantes
 
 
 
-            <label htmlFor="md_medicamento">MD Medicamento </label>
+            <label className="block" htmlFor="md_medicamento">MD Medicamento </label>
             <input
               id="md_medicamento"
               name="md_medicamento"
