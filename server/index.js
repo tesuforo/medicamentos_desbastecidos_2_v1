@@ -13,7 +13,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 console.log(__dirname)
 
 app.use(cors({
-    origin: 'http://5.183.11.6:5173',credentials: true
+    origin: 'http://5.183.11.6:5173', credentials: true
 }));
 
 app.use(express.json());

@@ -194,22 +194,61 @@ function TaskForm_edit() {
               <option value="No">No</option>
             </select>
 
-            <label className="block" htmlFor="pertenece_programa">pertenece a un programa </label>
+            <label className="block" htmlFor="pertenece_programa">Pertenece a un programa </label>
             <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa}>
 
-              <option value="">Seleccione </option>
-              <option value="Deabetes">Deabetes</option>
-              <option value="Hipertension">Hipertensión</option>
-              <option value="ERC">ERC</option>
+              <option value="No pertenezco a algún programa">No pertenezco a algún programa </option>
+              <option value="Hipertensión">Hipertensión</option>
+              <option value="Diabetes">Diabetes</option>
+              <option value="Nefroprotección">Nefroprotección</option>
+              <option value="Gestantes">Gestantes</option>
             </select>
 
+
+            
             <label className="block" htmlFor="especialidad_formulo_medicamento">
               Especialidad quien Formulo el Medicamento </label>
             <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}>
 
               <option value="">Seleccione </option>
-              <option value="Medicina Interna">Medicina Interna</option>
-              <option value="Medicina General">Medician General</option>
+              <option value="MEDICINA GENERAL">MEDICINA GENERAL</option>
+              <option value="MEDICINA INTERNA">MEDICINA INTERNA</option>
+               <option value="MEDICINA FAMILIAR">MEDICINA FAMILIAR</option>
+                <option value="GINECOLOGIA Y OBSTETRICIA">GINECOLOGIA Y OBSTETRICIA</option>
+                 <option value="PEDIATRIA">PEDIATRIA</option>
+                  <option value="CARDIOLOGIA">CARDIOLOGIA</option>
+                   <option value="ENDOCRINOLOGIA">ENDOCRINOLOGIA</option>
+                    <option value="CIRUGIA VASCULAR PERIFERICA">CIRUGIA VASCULAR PERIFERICA</option>
+                     <option value="NEUMOLOGIA">NEUMOLOGIA</option>
+                      <option value="OTORRINOLARINGOLOGIA">OTORRINOLARINGOLOGIA</option>
+                      <option value="UROLOGIA">UROLOGIA</option>
+                       <option value="ALERGOLOGIA">ALERGOLOGIA</option>
+                        <option value="CARDIOLOGIA PEDIATRICA">CARDIOLOGIA PEDIATRICA</option>
+                        <option value="CIRUGIA CARDIOVASCULAR">CIRUGIA CARDIOVASCULAR</option>
+                         <option value="CIRUGIA DE LA MANO">CIRUGIA DE LA MANO</option>
+                          <option value="CIRUGIA DE TORAX">CIRUGIA DE TORAX</option>
+                           <option value="CIRUGIA GENERAL">CIRUGIA GENERAL</option>
+                            <option value="CIRUGIA INFANTIL O PEDIATRICAMEDICINA INTERNA">CIRUGIA INFANTIL O PEDIATRICA</option>
+                             <option value="CIRUGIA MAXILOFACIAL">CIRUGIA MAXILOFACIAL</option>
+                              <option value="CIRUGIA ORAL">CIRUGIA ORAL</option>
+                               <option value="CIRUGIA PLASTICA">CIRUGIA PLASTICA</option>
+                                <option value="DERMATOLOGIA">DERMATOLOGIA</option>
+                                 <option value="DOLOR Y CUIDADOS PALIATIVOSUROLOGIA">DOLOR Y CUIDADOS PALIATIVOS</option>
+                                  <option value="ENDOCRINOLOGIA PEDIATRICAUROLOGIA">ENDOCRINOLOGIA PEDIATRICAUROLOGIA</option>
+                                   <option value="ENDODONCIAUROLOGIA">ENDODONCIAUROLOGIA</option>
+                                    <option value="GASTROENTEROLOGIA">GASTROENTEROLOGIA</option>
+                                     <option value="MEDICINA FISICA Y REHABILITACION">MEDICINA FISICA Y REHABILITACION</option>
+                                      <option value="NEFROLOGIA">NEFROLOGIA</option>
+                                       <option value="NEUROCIRUGIA">NEUROCIRUGIA</option>
+                                        <option value="NEUROLOGIA">NEUROLOGIA</option>
+                                         <option value="UROLOGIA">UROLOGIA</option>
+                                          <option value="NEUROLOGIA INFANTIL">NEUROLOGIA INFANTIL</option>
+                                           <option value="ORTOPEDIA PEDIATRICA">ORTOPEDIA PEDIATRICA</option>
+                                            <option value="ORTOPEDIA Y TRAUMATOLOGIA">ORTOPEDIA Y TRAUMATOLOGIA</option>
+                                             <option value="PERIODONCIA">PERIODONCIA</option>
+                                              <option value="PSIQUIATRIA">PSIQUIATRIA</option>
+
+
             </select>
 
         
@@ -255,9 +294,19 @@ function TaskForm_edit() {
             <select name="description" onChange={handleChange} value={values.description}>
 
               <option value="">Seleccione </option>
-              <option value="Reformulacion por Medicamento Alternativo">Reformulacion por Medicamento Alternativo</option>
-              <option value="Reformulacion por Medicamento">Reformulacion por Medicamento</option>
+              <option value="Medicamento agotado por laboratorio">Medicamento agotado por laboratorio</option>
+              <option value="Medicamento con carta INVIMA">Medicamento con carta INVIMA</option>
+                <option value="Medicamento con carta INVIMA - Formulación postfechada">Medicamento con carta INVIMA - Formulación postfechada</option>
+                  <option value="Formulación realizada por prestador externo NEPS">Formulación realizada por prestador externo NEPS</option>
+                    <option value="Formulación realizada por prestador externo BIPS">Formulación realizada por prestador externo BIPS</option>
+                      <option value="Otro">Otro</option>
             </select>
+
+
+
+
+
+
 
             <label className="block" htmlFor="medico_del_caso">
               Medico del Caso </label>
