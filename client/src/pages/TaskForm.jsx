@@ -69,8 +69,8 @@ function TaskForm() {
           console.log(values);
 
          if (params.id) {
-         await updateTask(params.id, values); 
-       
+         await updateTask(params.id, values);
+
          } else {
            await createTask(values);
          }
@@ -101,23 +101,23 @@ function TaskForm() {
             <h1 className="text-xl font-bold uppercase text-center">
               {params.id ? "Editar Solicitud" : "Nueva  Solicitud "}
             </h1>
-           
 
-            <label className="block" htmlFor="departamento">Departamento :</label>
+
+            <label className="block" htmlFor="departamento">Departamento*</label>
             <select name="departamento" onChange={handleChange} value={values.departamento}>
               <option value="Cundinamarca">Cundinamarca</option>
-              
+
             </select>
-           
-            <label className="block" htmlFor="title">Sede :</label>
+
+            <label className="block" htmlFor="title">Sede*</label>
             <select name="title" onChange={handleChange} value={values.title}>
               <option value="Bienestar Soacha">Bienestar Soacha</option>
-              
+
             </select>
 
-           
 
-            <label className="block" htmlFor="tipoid">Tipo de Identificación : </label>
+
+            <label className="block" htmlFor="tipoid">Tipo de Identificación* </label>
             <select name="tipoid" onChange={handleChange} value={values.tipoid}>
               <option value="">Seleccione </option>
               <option value="CC">CC</option>
@@ -127,7 +127,7 @@ function TaskForm() {
                  <option value="PA">PA</option>
             </select>
 
-            <label className="block" htmlFor="numeroid">Numero de Identificación : </label>
+            <label className="block" htmlFor="numeroid">Número de Identificación* </label>
             <input
               type="text"
               name="numeroid"
@@ -137,7 +137,7 @@ function TaskForm() {
               value={values.numeroid}
             />
 
-            <label htmlFor="nombre">Nombres y Apellidos : </label>
+            <label htmlFor="nombre">Nombres y Apellidos*</label>
             <input
               type="text"
               name="nombre"
@@ -147,7 +147,7 @@ function TaskForm() {
               value={values.nombre}
             />
 
-            <label htmlFor="telefono1">Numero de Telefono</label>
+            <label htmlFor="telefono1">Télefono de contacto*</label>
             <input
               type="text"
               name="telefono1"
@@ -157,7 +157,7 @@ function TaskForm() {
               value={values.telefono1}
             />
 
-            <label htmlFor="telefono2">Telefono 2</label>
+            <label htmlFor="telefono2">Télefono 2</label>
             <input
               type="text"
               name="telefono2"
@@ -167,7 +167,7 @@ function TaskForm() {
               value={values.telefono2}
             />
 
-            <label htmlFor="correoelectronico">Email </label>
+            <label htmlFor="correoelectronico">Correo Electrónico* </label>
             <input
               type="text"
               name="correoelectronico"
@@ -177,7 +177,7 @@ function TaskForm() {
               value={values.correoelectronico}
             />
 
-            <label  className="block" htmlFor="gestante">Gestante ? : </label>
+            <label  className="block" htmlFor="gestante">Gestante* </label>
             <select name="gestante" onChange={handleChange} value={values.gestante}>
               <option value="">Gestante ? </option>
               <option value="SI">Si</option>
@@ -194,14 +194,14 @@ function TaskForm() {
               <option value="Gestantes">Gestantes</option>
             </select>
 
-           
+
 
 
 
 
 
             <label className="block" htmlFor="especialidad_formulo_medicamento">
-              Especialidad quien Formulo el Medicamento </label>
+              Especialidad de quien Formulo el Medicamento </label>
             <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}>
 
               <option value="">Seleccione </option>
@@ -245,20 +245,8 @@ function TaskForm() {
 
             </select>
 
-            <label className="block" htmlFor="fecha_vigencia_formula"> Fecha Vigencia Formula</label>
-            <input
-              id="fecha_vigencia_formula"
-              name="fecha_vigencia_formula"
-              type="date"
-              className="px-2 py-1 rounded-sm w-full"
-              placeholder="Fecha Vigencia Formula"
-              onChange={handleChange}
-              value={values.fecha_vigencia_formula}
-            />
 
-
-
-            <label className="block" htmlFor="md_medicamento">MD Medicamento </label>
+            <label className="block" htmlFor="md_medicamento">MD Medicamento*, Ver Imagen de apoyo </label>
             <input
               id="md_medicamento"
               name="md_medicamento"
@@ -279,6 +267,21 @@ function TaskForm() {
               value={values.md_medicamento_dos}
             />
 
+            <label className="block" htmlFor="fecha_vigencia_formula"> Fecha Vigencia Formula *</label>
+            <input
+              id="fecha_vigencia_formula"
+              name="fecha_vigencia_formula"
+              type="date"
+              className="px-2 py-1 rounded-sm w-full"
+              placeholder="Fecha Vigencia Formula"
+              onChange={handleChange}
+              value={values.fecha_vigencia_formula}
+            />
+
+
+
+
+
 
             <label className="block" htmlFor="descripciones">Observaciones </label>
             <textarea
@@ -293,12 +296,12 @@ function TaskForm() {
 <br></br>
 
 
-            < button class="rounded-full"   
-            type="submit" 
+            < button class="rounded-full"
+            type="submit"
             disabled ={isSubmitting}
             className="block bg-indigo-500 px-2 py-1 text-white w-full rounded-md">
-              
-              {isSubmitting ? "Guardando.." : "Guardar"}
+
+              {isSubmitting ? "Enviando.." : "Enviar"}
               </button>
           </form>
         )}
