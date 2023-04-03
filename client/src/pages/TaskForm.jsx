@@ -102,21 +102,20 @@ function TaskForm() {
               {params.id ? "Editar Solicitud" : "Nueva  Solicitud "}
             </h1>
            
-           
-            <label className="block" htmlFor="title">Sede :</label>
-            <select name="title" onChange={handleChange} value={values.title}>
-              <option value="">Escoja su Sede</option>
-              <option value="Bienestar sur">Bienestar Sur </option>
-              <option value="Bienestar Norte">Bienestar Norte</option>
-            </select>
 
             <label className="block" htmlFor="departamento">Departamento :</label>
             <select name="departamento" onChange={handleChange} value={values.departamento}>
-              <option value="">Escoja Departamento</option>
               <option value="Cundinamarca">Cundinamarca</option>
-              <option value="Bogota DC">Bogota DC</option>
-              <option value="Atlantico">Atlantico</option>
+              
             </select>
+           
+            <label className="block" htmlFor="title">Sede :</label>
+            <select name="title" onChange={handleChange} value={values.title}>
+              <option value="Bienestar Soacha">Bienestar Soacha</option>
+              
+            </select>
+
+           
 
             <label className="block" htmlFor="tipoid">Tipo de Identificación : </label>
             <select name="tipoid" onChange={handleChange} value={values.tipoid}>

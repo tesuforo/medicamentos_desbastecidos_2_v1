@@ -312,9 +312,8 @@ function TaskForm_edit() {
               Medico del Caso </label>
             <select name="medico_del_caso" onChange={handleChange} value={values.medico_del_caso}>
 
-              <option value="">Seleccione </option>
-              <option value="Cristy">Cristy</option>
-              <option value="Santiago"> Santiago</option>
+              <option value="Medico Back">Medico Back</option>
+           
             </select>
 
              <label className="block" htmlFor="observaciones_enfermera">Observaciones Enfermeria</label>
