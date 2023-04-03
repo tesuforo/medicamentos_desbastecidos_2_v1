@@ -184,6 +184,7 @@ function TaskForm() {
               <option value="No">No</option>
             </select>
 
+
             <label className="block" htmlFor="pertenece_programa">Pertenece a un programa? </label>
             <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa}>
 
@@ -244,9 +245,12 @@ function TaskForm() {
 
 
             </select>
-
-
-            <label className="block" htmlFor="md_medicamento">MD Medicamento*, Ver Imagen de apoyo </label>
+            <div className="flex flex-wrap justify-center">
+  <div className="w-8/12 sm:w-8/12 px-4">
+    <img src={formula} alt="..." className="shadow rounded-full max-w-full h-auto align-middle border-none" />
+  </div>
+</div>
+            <label className="block" htmlFor="md_medicamento">MD Medicamento*, Ver Imagen </label>
             <input
               id="md_medicamento"
               name="md_medicamento"
@@ -266,6 +270,7 @@ function TaskForm() {
               onChange={handleChange}
               value={values.md_medicamento_dos}
             />
+
 
             <label className="block" htmlFor="fecha_vigencia_formula"> Fecha Vigencia Formula *</label>
             <input
