@@ -63,11 +63,7 @@ function TaskForm() {
 
       <h3 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "." } </h3>
 
-     <div className="flex flex-wrap justify-center">
-<div className="w-6/12 sm:w-4/12 px-1">
-  <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none"/>
-</div>
-</div>
+  
       <Formik
         initialValues={task}
         enableReinitialize={true}
