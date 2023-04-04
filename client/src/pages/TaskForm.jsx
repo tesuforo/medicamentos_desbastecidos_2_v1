@@ -69,12 +69,20 @@ function TaskForm() {
       <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : " " }  </h1>
 
 
+      <div class="flex justify-center">
+        <figure class="mb-4 inline-block max-w-sm">
+          <img
+            src={formula1}
+            class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
+            alt="Taking up Water with a Spoon" />
+          <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
+          Registre la siguiente Información
+          </figcaption>
+        </figure>
+      </div>
 
-       <div className="flex flex-wrap justify-center">
-      <div className="w-64 sm:w-4/12 px-2">
-    <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
-          </div>
-             </div>
+
+
 
       <Formik
         initialValues={task}
@@ -181,7 +189,7 @@ function TaskForm() {
               value={values.telefono2}
             />
 
-            <label htmlFor="correoelectronico">Correo Electronico</label>
+            <label htmlFor="correoelectronico">Correo Electronico *</label>
             <input
               type="text"
               name="correoelectronico"
@@ -198,7 +206,7 @@ function TaskForm() {
               <option value="No">No</option>
             </select>
 
-            <label className="block" htmlFor="pertenece_programa">Pertenece a un programa * </label>
+            <label className="block" htmlFor="pertenece_programa">Pertenece a un programa* </label>
             <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa}>
 
               <option value="No pertenezco a algún programa">No pertenezco a algún programa </option>
@@ -330,7 +338,7 @@ function TaskForm() {
             disabled ={isSubmitting}
             className="block bg-indigo-500 px-2 py-1 text-white w-full rounded-md">
 
-              {isSubmitting ? "Guardando.." : "Guardar"}
+              {isSubmitting ? "Enviando.." : "Enviar"}
               </button>
           </form>
         )}
