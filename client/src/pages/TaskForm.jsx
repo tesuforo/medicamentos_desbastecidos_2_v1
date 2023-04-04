@@ -66,12 +66,12 @@ function TaskForm() {
  return (
     <div>
 
-      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Bienvenido" }  </h1>
+      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : " " }  </h1>
 
 
 
        <div className="flex flex-wrap justify-center">
-      <div className="w-6/12 sm:w-4/12 px-2">
+      <div className="w-64 sm:w-4/12 px-2">
     <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
           </div>
              </div>
@@ -117,13 +117,13 @@ function TaskForm() {
             </h1>
 
 
-            <label className="block" htmlFor="departamento">Departamento :</label>
+            <label className="block" htmlFor="departamento">Departamento*</label>
             <select name="departamento" onChange={handleChange} value={values.departamento}>
               <option value="Cundinamarca">Cundinamarca</option>
 
             </select>
 
-            <label className="block" htmlFor="title">Sede :</label>
+            <label className="block" htmlFor="title">Sede*</label>
             <select name="title" onChange={handleChange} value={values.title}>
               <option value="Bienestar Soacha">Bienestar Soacha</option>
 
@@ -263,31 +263,28 @@ function TaskForm() {
 
 
 
-<figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-350">
-  <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={formula} alt="" width="350" height="512"/>
-  <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-    <blockquote>
-      <p class="text-lg font-medium">
-     <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento </label> </h4>
-      </p>
-    </blockquote>
-    <figcaption class="font-medium">
-      <input
-              id="md_medicamento"
-              name="md_medicamento"
-              type="text"
-              className="px-2 py-1 rounded-sm w-full"
-              placeholder="Registrar"
-              onChange={handleChange}
-              value={values.md_medicamento}
-            />
-      <div class="text-slate-700 dark:text-slate-200">
+            <div class="flex justify-center">
+              <figure class="mb-4 inline-block max-w-sm">
+                <img
+                  src={formula}
 
-      </div>
-    </figcaption>
-  </div>
-</figure>
+                  class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
+                  alt="Taking up Water with a Spoon" />
+                   <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento*, Ver Imagen </label> </h4>
+                <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
 
+                  <input
+                          id="md_medicamento"
+                          name="md_medicamento"
+                          type="text"
+                          className="px-2 py-1 rounded-sm w-full"
+                          placeholder="Registrar"
+                          onChange={handleChange}
+                          value={values.md_medicamento}
+                        />
+                </figcaption>
+              </figure>
+            </div>
 
 
             <label htmlFor="md_medicamento"> Otro MD Medicamento  </label>
