@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { deleteTaskRequest } from "../api/tasks.api";
 import { useTasks } from "../context/TaskContext";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import DataTable from 'react-data-table-component';
+
 import TasksPage from "../pages/TasksPage";
 
 
