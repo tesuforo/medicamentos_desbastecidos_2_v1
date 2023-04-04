@@ -75,9 +75,7 @@ function TaskForm() {
             src={formula1}
             class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
             alt="Taking up Water with a Spoon" />
-          <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
-          Registre la siguiente Información
-          </figcaption>
+        
         </figure>
       </div>
 
