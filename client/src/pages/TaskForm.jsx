@@ -75,12 +75,9 @@ function TaskForm() {
             src={formula1}
             class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
             alt="Taking up Water with a Spoon" />
-        
+
         </figure>
       </div>
-
-
-
 
       <Formik
         initialValues={task}
@@ -118,9 +115,9 @@ function TaskForm() {
         {({ handleChange, handleSubmit,values, isSubmitting }) => (
           <form onSubmit={handleSubmit} className="bg-slate-300 max-w-sm rounded-md p-4 mx-auto mt-10">
 
-            <h1 className="text-xl font-bold uppercase text-center">
+            <h2 className="text-xl font-bold uppercase text-center">
               {params.id ? "Editar Solicitud" : "Formulario"}
-            </h1>
+            </h2>
 
 
             <label className="block" htmlFor="departamento">Departamento*</label>
@@ -151,7 +148,7 @@ function TaskForm() {
             <input
               type="text"
               name="numeroid"
-              placeholder="Digite Numero de Identificación"
+              placeholder="identificación"
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.numeroid}
@@ -161,7 +158,7 @@ function TaskForm() {
             <input
               type="text"
               name="nombre"
-              placeholder="Nombres y Apellidos"
+              placeholder="Nombre Apellido"
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.nombre}
@@ -171,7 +168,7 @@ function TaskForm() {
             <input
               type="text"
               name="telefono1"
-              placeholder="Celular"
+              placeholder="310-123-1234"
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.telefono1}
@@ -191,7 +188,7 @@ function TaskForm() {
             <input
               type="text"
               name="correoelectronico"
-              placeholder="Correo Electronico"
+              placeholder="ejemplo@gmail.com"
               className="px-2 py-1 rounded-sm w-full"
               onChange={handleChange}
               value={values.correoelectronico}
@@ -276,7 +273,7 @@ function TaskForm() {
 
                   class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
                   alt="Taking up Water with a Spoon" />
-                   <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento*, Ver Imagen </label> </h4>
+                   <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento*, ver imagen = recuadro rojo </label> </h4>
                 <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
 
                   <input
@@ -284,7 +281,7 @@ function TaskForm() {
                           name="md_medicamento"
                           type="text"
                           className="px-2 py-1 rounded-sm w-full"
-                          placeholder="Registrar"
+                          placeholder="MD1234"
                           onChange={handleChange}
                           value={values.md_medicamento}
                         />
@@ -299,7 +296,7 @@ function TaskForm() {
               name="md_medicamento_dos"
               type="text"
               className="px-2 py-1 rounded-sm w-full"
-              placeholder="Otro MD Medicamento?"
+              placeholder="MD1234"
               onChange={handleChange}
               value={values.md_medicamento_dos}
             />
@@ -323,7 +320,7 @@ function TaskForm() {
             <textarea
               name="descripciones"
               id="descripciones"
-              rows="3"
+              rows="4"
               placeholder=" Observaciones "
               onChange={handleChange}
               value={values.descripciones}
