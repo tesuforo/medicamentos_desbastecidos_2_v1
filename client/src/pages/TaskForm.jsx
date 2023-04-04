@@ -61,7 +61,7 @@ function TaskForm() {
  return (
     <div>
 
-      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitud " : "Nueva Solicitud" }  </h1>
+      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Formulario de Medicamento Desabastecido" }  </h1>
 
       <Formik
         initialValues={task}
@@ -247,7 +247,7 @@ function TaskForm() {
 
             </select>
             <div className="flex flex-wrap justify-center">
-            <div className="w-8/12 sm:w-8/12 px-4">
+            <div className="w-8/12 sm:w-8/12 px-3">
            <img src={formula} alt="..." className="shadow rounded-full max-w-full h-auto align-middle border-none" />
             </div>
               </div>
