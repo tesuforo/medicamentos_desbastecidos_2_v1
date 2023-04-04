@@ -61,7 +61,7 @@ function TaskForm() {
  return (
     <div>
 
-      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Formulario de Medicamento Desabastecido" }  </h1>
+      <h3 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Formulario de Medicamento Desabastecido" }  </h3>
 
       <Formik
         initialValues={task}
