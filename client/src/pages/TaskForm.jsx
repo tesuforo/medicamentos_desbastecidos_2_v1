@@ -2,8 +2,13 @@ import { Form, Formik } from "formik";
 import { useTasks } from "../context/TaskContext";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect,useState } from "react";
-import formula from '../assets/img/MED0012x_100.jpg';
-import formula1 from '../assets/img/form.png';
+import formula from '../assets/img/MED0012x_100.jpg'
+import formula1 from '../assets/img/form.png'
+
+
+
+
+
 
 
 function TaskForm() {
@@ -61,9 +66,16 @@ function TaskForm() {
  return (
     <div>
 
-      <h3 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "." } </h3>
+      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Bienvenido" }  </h1>
 
-  
+
+
+       <div className="flex flex-wrap justify-center">
+  <div className="w-6/12 sm:w-4/12 px-16">
+    <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
+  </div>
+</div>
+
       <Formik
         initialValues={task}
         enableReinitialize={true}
@@ -105,13 +117,13 @@ function TaskForm() {
             </h1>
 
 
-            <label className="block" htmlFor="departamento">Departamento*</label>
+            <label className="block" htmlFor="departamento">Departamento :</label>
             <select name="departamento" onChange={handleChange} value={values.departamento}>
               <option value="Cundinamarca">Cundinamarca</option>
 
             </select>
 
-            <label className="block" htmlFor="title">Sede*</label>
+            <label className="block" htmlFor="title">Sede :</label>
             <select name="title" onChange={handleChange} value={values.title}>
               <option value="Bienestar Soacha">Bienestar Soacha</option>
 
@@ -119,7 +131,7 @@ function TaskForm() {
 
 
 
-            <label className="block" htmlFor="tipoid">Tipo de Identificación* </label>
+            <label className="block" htmlFor="tipoid">Tipo de identificación * </label>
             <select name="tipoid" onChange={handleChange} value={values.tipoid}>
               <option value="">Seleccione </option>
               <option value="CC">CC</option>
@@ -129,7 +141,7 @@ function TaskForm() {
                  <option value="PA">PA</option>
             </select>
 
-            <label className="block" htmlFor="numeroid">Número de Identificación* </label>
+            <label className="block" htmlFor="numeroid">Número de Identificación * </label>
             <input
               type="text"
               name="numeroid"
@@ -139,7 +151,7 @@ function TaskForm() {
               value={values.numeroid}
             />
 
-            <label htmlFor="nombre">Nombres y Apellidos*</label>
+            <label htmlFor="nombre">Nombres y Apellidos * </label>
             <input
               type="text"
               name="nombre"
@@ -149,7 +161,7 @@ function TaskForm() {
               value={values.nombre}
             />
 
-            <label htmlFor="telefono1">Télefono de contacto*</label>
+            <label htmlFor="telefono1">Teléfono *</label>
             <input
               type="text"
               name="telefono1"
@@ -159,7 +171,7 @@ function TaskForm() {
               value={values.telefono1}
             />
 
-            <label htmlFor="telefono2">Télefono 2</label>
+            <label htmlFor="telefono2">Teléfono 2</label>
             <input
               type="text"
               name="telefono2"
@@ -169,7 +181,7 @@ function TaskForm() {
               value={values.telefono2}
             />
 
-            <label htmlFor="correoelectronico">Correo Electrónico* </label>
+            <label htmlFor="correoelectronico">Correo Electronico</label>
             <input
               type="text"
               name="correoelectronico"
@@ -179,15 +191,14 @@ function TaskForm() {
               value={values.correoelectronico}
             />
 
-            <label  className="block" htmlFor="gestante">Gestante* </label>
+            <label  className="block" htmlFor="gestante">Gestante * </label>
             <select name="gestante" onChange={handleChange} value={values.gestante}>
               <option value="">Gestante ? </option>
               <option value="SI">Si</option>
               <option value="No">No</option>
             </select>
 
-
-            <label className="block" htmlFor="pertenece_programa">Pertenece a un programa? </label>
+            <label className="block" htmlFor="pertenece_programa">Pertenece a un programa * </label>
             <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa}>
 
               <option value="No pertenezco a algún programa">No pertenezco a algún programa </option>
@@ -204,7 +215,7 @@ function TaskForm() {
 
 
             <label className="block" htmlFor="especialidad_formulo_medicamento">
-              Especialidad quien Formulo Medicamento </label>
+              Especialidad quien Formulo el Medicamento </label>
             <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}>
 
               <option value="">Seleccione </option>
@@ -247,30 +258,38 @@ function TaskForm() {
 
 
             </select>
-            <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-350">
-    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={formula} alt="" width="350" height="512"/>
-    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-      <blockquote>
-        <p class="text-lg font-medium">
-       <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento </label> </h4>
-        </p>
-      </blockquote>
-      <figcaption class="font-medium">
-        <input
-                id="md_medicamento"
-                name="md_medicamento"
-                type="text"
-                className="px-2 py-1 rounded-sm w-full"
-                placeholder="Registrar"
-                onChange={handleChange}
-                value={values.md_medicamento}
-              />
-        <div class="text-slate-700 dark:text-slate-200">
 
-        </div>
-      </figcaption>
-    </div>
-  </figure>
+
+
+
+
+<figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-350">
+  <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={formula} alt="" width="350" height="512"/>
+  <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+    <blockquote>
+      <p class="text-lg font-medium">
+     <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento </label> </h4>
+      </p>
+    </blockquote>
+    <figcaption class="font-medium">
+      <input
+              id="md_medicamento"
+              name="md_medicamento"
+              type="text"
+              className="px-2 py-1 rounded-sm w-full"
+              placeholder="Registrar"
+              onChange={handleChange}
+              value={values.md_medicamento}
+            />
+      <div class="text-slate-700 dark:text-slate-200">
+
+      </div>
+    </figcaption>
+  </div>
+</figure>
+
+
+
             <label htmlFor="md_medicamento"> Otro MD Medicamento  </label>
             <input
               id="md_medicamento_dos"
@@ -281,9 +300,7 @@ function TaskForm() {
               onChange={handleChange}
               value={values.md_medicamento_dos}
             />
-
-
-            <label className="block" htmlFor="fecha_vigencia_formula"> Fecha Vigencia Formula *</label>
+            <label className="block" htmlFor="fecha_vigencia_formula"> Fecha Vigencia Formula</label>
             <input
               id="fecha_vigencia_formula"
               name="fecha_vigencia_formula"
@@ -317,10 +334,14 @@ function TaskForm() {
             disabled ={isSubmitting}
             className="block bg-indigo-500 px-2 py-1 text-white w-full rounded-md">
 
-              {isSubmitting ? "Enviando.." : "Enviar"}
+              {isSubmitting ? "Guardando.." : "Guardar"}
               </button>
           </form>
         )}
+
+
+
+
       </Formik>
     </div>
   );
