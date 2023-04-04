@@ -3,7 +3,7 @@ import { useTasks } from "../context/TaskContext";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect,useState } from "react";
 import formula from '../assets/img/MED0012x_100.jpg'
-
+import formula1 from '../assets/img/form.png'
 
 
 function TaskForm() {
@@ -62,7 +62,7 @@ function TaskForm() {
     <div>
 
       <h3 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Formulario de Medicamento Desabastecido" }  </h3>
-
+        <img class="h-auto max-w-lg mx-auto" src={formula1}></img>
       <Formik
         initialValues={task}
         enableReinitialize={true}
@@ -203,7 +203,7 @@ function TaskForm() {
 
 
             <label className="block" htmlFor="especialidad_formulo_medicamento">
-              Especialidad de quien Formulo el Medicamento </label>
+              Especialidad quien Formulo Medicamento </label>
             <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}>
 
               <option value="">Seleccione </option>
@@ -246,21 +246,30 @@ function TaskForm() {
 
 
             </select>
-            <div className="flex flex-wrap justify-center">
-            <div className="w-8/12 sm:w-8/12 px-3">
-           <img src={formula} alt="..." className="shadow rounded-full max-w-full h-auto align-middle border-none" />
-            </div>
-              </div>
-            <label className="block" htmlFor="md_medicamento">MD Medicamento*, Ver Imagen </label>
-            <input
-              id="md_medicamento"
-              name="md_medicamento"
-              type="text"
-              className="px-2 py-1 rounded-sm w-full"
-              placeholder="MD Medicamento"
-              onChange={handleChange}
-              value={values.md_medicamento}
-            />
+            <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-350">
+    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src={formula} alt="" width="350" height="512"/>
+    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+      <blockquote>
+        <p class="text-lg font-medium">
+       <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento </label> </h4>
+        </p>
+      </blockquote>
+      <figcaption class="font-medium">
+        <input
+                id="md_medicamento"
+                name="md_medicamento"
+                type="text"
+                className="px-2 py-1 rounded-sm w-full"
+                placeholder="Registrar"
+                onChange={handleChange}
+                value={values.md_medicamento}
+              />
+        <div class="text-slate-700 dark:text-slate-200">
+
+        </div>
+      </figcaption>
+    </div>
+  </figure>
             <label htmlFor="md_medicamento"> Otro MD Medicamento  </label>
             <input
               id="md_medicamento_dos"
