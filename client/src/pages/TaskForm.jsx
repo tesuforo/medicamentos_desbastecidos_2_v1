@@ -2,6 +2,7 @@ import { Form, Formik } from "formik";
 import { useTasks } from "../context/TaskContext";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect,useState } from "react";
+import formula from '../assets/img/MED0012x_100.jpg'
 
 
 
@@ -246,10 +247,10 @@ function TaskForm() {
 
             </select>
             <div className="flex flex-wrap justify-center">
-  <div className="w-8/12 sm:w-8/12 px-4">
-    <img src={formula} alt="..." className="shadow rounded-full max-w-full h-auto align-middle border-none" />
-  </div>
-</div>
+            <div className="w-8/12 sm:w-8/12 px-4">
+           <img src={formula} alt="..." className="shadow rounded-full max-w-full h-auto align-middle border-none" />
+            </div>
+              </div>
             <label className="block" htmlFor="md_medicamento">MD Medicamento*, Ver Imagen </label>
             <input
               id="md_medicamento"
