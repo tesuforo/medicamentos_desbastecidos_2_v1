@@ -122,12 +122,14 @@ function TaskForm() {
 
             <label className="block" htmlFor="departamento">Departamento*</label>
             <select name="departamento" onChange={handleChange} value={values.departamento}>
+            <option value="">Seleccione</option>
               <option value="Cundinamarca">Cundinamarca</option>
 
             </select>
 
             <label className="block" htmlFor="title">Sede*</label>
             <select name="title" onChange={handleChange} value={values.title}>
+              <option value="">Seleccione</option>
               <option value="Bienestar Soacha">Bienestar Soacha</option>
 
             </select>
