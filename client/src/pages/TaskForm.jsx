@@ -61,8 +61,13 @@ function TaskForm() {
  return (
     <div>
 
-      <h3 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Formulario de Medicamento Desabastecido" }  </h3>
-        <img class="h-auto max-w-lg mx-auto" src={formula1}></img>
+      <h3 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Bienvenido" }  </h3>
+
+     <div className="flex flex-wrap justify-center">
+<div className="w-6/12 sm:w-4/12 px-16">
+  <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
+</div>
+</div>
       <Formik
         initialValues={task}
         enableReinitialize={true}
@@ -100,7 +105,7 @@ function TaskForm() {
           <form onSubmit={handleSubmit} className="bg-slate-300 max-w-sm rounded-md p-4 mx-auto mt-10">
 
             <h1 className="text-xl font-bold uppercase text-center">
-              {params.id ? "Editar Solicitud" : "Nueva  Solicitud "}
+              {params.id ? "Editar Solicitud" : "Formulario "}
             </h1>
 
 
