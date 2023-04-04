@@ -2,8 +2,8 @@ import { Form, Formik } from "formik";
 import { useTasks } from "../context/TaskContext";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect,useState } from "react";
-import formula from '../assets/img/MED0012x_100.jpg'
-import formula1 from '../assets/img/form.png'
+import formula from '../assets/img/MED0012x_100.jpg';
+import formula1 from '../assets/img/form.png';
 
 
 function TaskForm() {
