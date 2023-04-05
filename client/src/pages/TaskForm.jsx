@@ -186,7 +186,7 @@ function TaskForm() {
               value={values.telefono2}
             />
 
-            <label htmlFor="correoelectronico">Correo Electronico *</label>
+            <label htmlFor="correoelectronico">Correo Electronico</label>
             <input
               type="text"
               name="correoelectronico"
@@ -275,7 +275,7 @@ function TaskForm() {
 
                   class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
                   alt="Taking up Water with a Spoon" />
-                   <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento*, ver imagen = recuadro rojo </label> </h4>
+                   <h4> <  label className="block"  htmlFor="md_medicamento">Codigo*, ver imagen = recuadro rojo </label> </h4>
                 <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
 
                   <input
