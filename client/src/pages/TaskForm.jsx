@@ -115,9 +115,9 @@ function TaskForm() {
         {({ handleChange, handleSubmit,values, isSubmitting }) => (
           <form onSubmit={handleSubmit} className="bg-slate-300 max-w-sm rounded-md p-4 mx-auto mt-10">
 
-            <h2 className="text-xl font-bold uppercase text-center">
-              {params.id ? "Editar Solicitud" : "Formulario"}
-            </h2>
+            <h3 className="text-xl font-bold uppercase text-center">
+              {params.id ? "Editar Solicitud" : "Solicitud de Reformulación"}
+            </h3>
 
 
             <label className="block" htmlFor="departamento">Departamento*</label>
