@@ -3,8 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { deleteTaskRequest } from "../api/tasks.api";
 import { useTasks } from "../context/TaskContext";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useTable } from 'react-table'
 
 import TasksPage from "../pages/TasksPage";
+
+
 
 
 
@@ -35,10 +38,10 @@ function TaskCard({ task }) {
 
 
 
-      class="table table-bordered">
+      class="table table-bordered table-secondary">
         <thead class="border-b font-medium dark:border-neutral-500">
 
-          <tr>
+          <tr className= "table-light">
             <th data-field="col1"  class="px-6 py-4" >Id </th>
             <th data-field="col2"  class="px-6 py-4">Sede </th>
 
@@ -77,13 +80,13 @@ function TaskCard({ task }) {
               Fecha de Creación
             </th>
             <th data-field="col22"  class="px-6 py-4" data-sortable="true">
-             Descartar Caso
+             Descartar
             </th>
             <th data-field="col20"  class="px-6 py-4" data-sortable="true">
-              Revisar Caso
+              Revisar
             </th>
             <th data-field="col21"  class="px-6 py-4" data-sortable="true">
-              Marcar Solcitud
+             Remitir
             </th>
           </tr>
         </thead>
@@ -92,14 +95,7 @@ function TaskCard({ task }) {
 <tbody>
 
 
-
-
-
-
-        <tr  class="border-b dark:border-neutral-500">
-          <td class="whitespace-nowrap px-6 py-4 font-medium">{task.id}</td>
-
-
+          <td class="whitespace-nowrap px-6 py-4">{task.id}</td>
 
           <td class="whitespace-nowrap px-6 py-4">{task.title}</td>
 
@@ -119,8 +115,8 @@ function TaskCard({ task }) {
           <td>
             <span>
               {task.done == 1
-                ? "Medicamento Revisado✔️"
-                : "Medicamento por Revisar❌"}{" "}
+                ? "Revisado✔️"
+                : "❌"}{" "}
             </span>{" "}
           </td>
           <td>
@@ -128,22 +124,19 @@ function TaskCard({ task }) {
           </td>
           <td>
 
-            <button className="bg-slate-200 px-2 py-1 text-black" onClick={() => deleteTask(task.id)}> Decartar caso</button>
+            <button className="bg-slate-200 px-2 py-1 text-black" onClick={() => deleteTask(task.id)}> 🗑️</button>
           </td>
 
           <td>
             <button className="bg-slate-400 px-2 py-1 text-black" onClick={() => navigate(`/edit_enfermeria/${task.id}`)}>
-              {" "}
-              Revisar Caso
+              🖉
             </button>
           </td>
           <td>
             {" "}
             <button className="bg-slate-200 px-2 py-1 text-black" onClick={() => handleDone(task.done)}>
-              Solicitud Revisada            </button>
+             ✅            </button>
           </td>
-        </tr>
-
 
 
  </tbody>

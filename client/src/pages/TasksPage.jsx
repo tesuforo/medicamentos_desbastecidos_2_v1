@@ -5,21 +5,21 @@ import { useTasks } from "../context/TaskContext";
 function TasksPage() {
 
   const {tasks, loadTasks} = useTasks();
- 
+
 
   useEffect(() => {
     loadTasks();
   }, []);
 
   function rederMain() {
-    if (tasks.length === 0) return <h1>No tasks yet</h1>;
+    if (tasks.length === 0) return <h1>No hay SOlicitudes</h1>;
     return tasks.map((task) => <TaskCard task={task} key={task.id} />);
   }
   return (
     <div >
-        
+
       <div>
-      Solicitudes de revision de Medicamento Desabastecido
+    💊  Solicitudes de revision de Medicamento Desabastecido
 </div>
       {rederMain()}
     </div>
