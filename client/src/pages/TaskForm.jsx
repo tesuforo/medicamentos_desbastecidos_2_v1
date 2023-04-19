@@ -268,7 +268,11 @@ function TaskForm() {
             </select>
            
 
-    
+    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8"/>
+  <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+
+    <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Formula Medica</h2>
+  </div>
           
 
 
@@ -279,7 +283,7 @@ function TaskForm() {
       
       class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
       alt="Taking up Water with a Spoon" />
-       <h4> <  label className="block"  htmlFor="md_medicamento">Codigo Medicamento*, Ver Imagen </label> </h4>
+       <h4> <  label className="block"  htmlFor="md_medicamento">Codigo Medicamento*, Ver recuadro rojo </label> </h4>
     <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
       
       <input
