@@ -189,7 +189,7 @@ function TaskForm() {
               value={values.telefono2}
             />
 
-            <label htmlFor="correoelectronico">Correo Electronico</label>
+            <label htmlFor="correoelectronico">Correo Electrónico</label>
             <input
               type="text"
               name="correoelectronico"
@@ -223,7 +223,7 @@ function TaskForm() {
 
 
             <label className="block" htmlFor="especialidad_formulo_medicamento">
-              Especialidad quien Formulo el Medicamento </label>
+              Especialidad quien Formuló el Medicamento </label>
             <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
               <option value="">Seleccione </option>
@@ -270,7 +270,7 @@ function TaskForm() {
 
    
 
-    <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Formula Medica</h2>
+    <h3 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Formula Médica</h3>
  
           
 
@@ -282,7 +282,7 @@ function TaskForm() {
       
       class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
       alt="Taking up Water with a Spoon" />
-       <h4> <  label className="block"  htmlFor="md_medicamento">Codigo Medicamento*, Ver recuadro rojo </label> </h4>
+       <h4> <  label className="block"  htmlFor="md_medicamento">Código Medicamento (Ver recuadro rojo en la imagen) </label> </h4>
     <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
       
       <input
@@ -304,7 +304,7 @@ function TaskForm() {
 
 
 
-            <label htmlFor="md_medicamento"> Otro Codigo Medicamento  </label>
+            <label htmlFor="md_medicamento"> Otro Código Medicamento  </label>
             <input
               id="md_medicamento_dos"
               name="md_medicamento_dos"
@@ -314,7 +314,7 @@ function TaskForm() {
               onChange={handleChange}
               value={values.md_medicamento_dos}
              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-            <label className="block" htmlFor="fecha_vigencia_formula"> Fecha Vigencia Formula</label>
+            <label className="block" htmlFor="fecha_vigencia_formula"> Fecha vigencia de la formula</label>
             <input
               id="fecha_vigencia_formula"
               name="fecha_vigencia_formula"

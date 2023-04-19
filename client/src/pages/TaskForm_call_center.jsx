@@ -292,7 +292,7 @@ function TaskForm_call_center() {
       
       class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
       alt="Taking up Water with a Spoon" />
-       <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento*, Ver Imagen </label> </h4>
+       <h4> <  label className="block"  htmlFor="md_medicamento">Codigo Medicamento*, Ver Imagen </label> </h4>
     <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
       
       <input
