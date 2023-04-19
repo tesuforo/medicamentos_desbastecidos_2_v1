@@ -280,7 +280,7 @@ function TaskForm_linea_de_frente() {
       
       class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
       alt="Taking up Water with a Spoon" />
-       <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento*, Ver Imagen </label> </h4>
+       <h4> <  label className="block"  htmlFor="md_medicamento">Codigo Medicamento*, Ver Imagen </label> </h4>
     <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
       
       <input
@@ -302,7 +302,7 @@ function TaskForm_linea_de_frente() {
 
 
 
-            <label htmlFor="md_medicamento"> Otro MD Medicamento  </label>
+            <label htmlFor="md_medicamento"> Otro Codigo Medicamento  </label>
             <input
               id="md_medicamento_dos"
               name="md_medicamento_dos"
