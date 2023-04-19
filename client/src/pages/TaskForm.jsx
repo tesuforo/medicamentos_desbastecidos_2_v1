@@ -121,9 +121,9 @@ function TaskForm() {
             </h1>
 
             <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8"/>
-  <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+
     <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Formulario</h2>
-  </div>
+  
 
             <label className="block" htmlFor="departamento">Departamento*</label>
             <select name="departamento" onChange={handleChange} value={values.departamento} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
