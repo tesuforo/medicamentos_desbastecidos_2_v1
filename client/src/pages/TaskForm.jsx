@@ -70,11 +70,7 @@ function TaskForm() {
       
     
 
-       <div className="flex flex-wrap justify-center">
-  <div class="h-auto max-w-full">
-    <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
-            </div>
-            </div>
+     
 
       <Formik
         initialValues={task}
@@ -116,6 +112,11 @@ function TaskForm() {
               {params.id ? "Editar Solicitud" : "Formulario"}
             </h1>
            
+             <div className="flex flex-wrap justify-center">
+  <div class="h-auto max-w-full">
+    <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
+            </div>
+            </div>
 
             <label className="block" htmlFor="departamento">Departamento*</label>
             <select name="departamento" onChange={handleChange} value={values.departamento} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
