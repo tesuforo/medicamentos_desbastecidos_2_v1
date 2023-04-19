@@ -44,6 +44,7 @@ function TaskCard({ task }) {
           <tr className= "table-light">
             <th data-field="col1"  class="px-6 py-4" >Id </th>
             <th data-field="col2"  class="px-6 py-4">Sede </th>
+            <th data-field="col555"  class="px-6 py-4">Remite </th>
 
 
             <th data-field="col5"  class="px-6 py-4" data-sortable="true">
@@ -98,6 +99,7 @@ function TaskCard({ task }) {
           <td class="whitespace-nowrap px-6 py-4">{task.id}</td>
 
           <td class="whitespace-nowrap px-6 py-4">{task.title}</td>
+          <td class="whitespace-nowrap px-6 py-4">{task.remite}</td>
 
 
           <td class="whitespace-nowrap px-6 py-4">{task.numeroid}</td>

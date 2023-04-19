@@ -20,6 +20,8 @@ function App() {
           <Routes>
             <Route path="/" element={<TasksPage />} />
             <Route path="/new" element={<TaskForm/>} />
+            <Route path="/call_center" element={<TaskForm_call_center/>} />
+            <Route path="/linea_de_frente" element={<TaskForm_linea_de_frente/>} />
             <Route path="/edit/:id" element={<TaskForm/>} />
             <Route path="/edit_enfermeria/:id" element={<TaskForm_edit/>} />
             <Route path="*" element={<NotFound/>} />
