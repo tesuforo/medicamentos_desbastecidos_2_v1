@@ -137,7 +137,7 @@ function TaskForm() {
 
 
             <label className="block" htmlFor="tipoid">Tipo de identificación * </label>
-            <select name="tipoid" onChange={handleChange} value={values.tipoid}class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <select name="tipoid" onChange={handleChange} value={values.tipoid} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               <option value="">Seleccione </option>
               <option value="CC">CC</option>
               <option value="RC">RC</option>
@@ -197,14 +197,14 @@ function TaskForm() {
               class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
             <label  className="block" htmlFor="gestante">Gestante * </label>
-            <select name="gestante" onChange={handleChange} value={values.gestante}class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <select name="gestante" onChange={handleChange} value={values.gestante} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               <option value="">Gestante ? </option>
               <option value="SI">Si</option>
               <option value="No">No</option>
             </select>
 
             <label className="block" htmlFor="pertenece_programa">Pertenece a un programa* </label>
-            <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa}class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
               <option value="No pertenezco a algún programa">No pertenezco a algún programa </option>
               <option value="Hipertensión">Hipertensión</option>
@@ -221,7 +221,7 @@ function TaskForm() {
 
             <label className="block" htmlFor="especialidad_formulo_medicamento">
               Especialidad quien Formulo el Medicamento </label>
-            <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
               <option value="">Seleccione </option>
               <option value="MEDICINA GENERAL">MEDICINA GENERAL</option>
@@ -286,7 +286,7 @@ function TaskForm() {
                           placeholder="MD1234"
                           onChange={handleChange}
                           value={values.md_medicamento}
-                         class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+                          class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
                 </figcaption>
               </figure>
             </div>
@@ -301,7 +301,7 @@ function TaskForm() {
               placeholder="MD1234"
               onChange={handleChange}
               value={values.md_medicamento_dos}
-             class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
             <label className="block" htmlFor="fecha_vigencia_formula"> Fecha Vigencia Formula</label>
             <input
               id="fecha_vigencia_formula"
@@ -325,8 +325,7 @@ function TaskForm() {
               rows="4"
               placeholder=" Observaciones "
               onChange={handleChange}
-              value={values.descripciones} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            ></textarea>
+              value={values.descripciones} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
 
 
 
