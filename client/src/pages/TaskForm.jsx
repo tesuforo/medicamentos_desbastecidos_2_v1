@@ -153,7 +153,7 @@ function TaskForm() {
             <input
               type="text"
               name="numeroid"
-              placeholder="Digite Numero de Identificación"
+              placeholder="Digite Número de Identificación"
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.numeroid}
@@ -193,7 +193,7 @@ function TaskForm() {
             <input
               type="text"
               name="correoelectronico"
-              placeholder="Correo Electronico"
+              placeholder="Correo Electrónico"
               className="px-2 py-1 rounded-sm w-full"
               onChange={handleChange}
               value={values.correoelectronico}
