@@ -114,30 +114,37 @@ function TaskForm_edit() {
             </h1>
            
            
-            <label className="block" htmlFor="title">Sede :</label>
-            <select name="title" onChange={handleChange} value={values.title}>
-              <option value="">Escoja su Sede</option>
-              <option value="Bienestar sur">Bienestar Sur </option>
-              <option value="Bienestar Norte">Bienestar Norte</option>
-            </select>
+          
+            <label className="blockblock" htmlFor="title">Sede*</label>
+           <div class="mt-2.5">
+            <select name="title" onChange={handleChange} value={values.title} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              <option value="">Seleccione</option>
+              <option value="Bienestar Soacha">Bienestar Soacha</option>
 
-            <label className="block" htmlFor="departamento">Departamento :</label>
-            <select name="departamento" onChange={handleChange} value={values.departamento}>
-              <option value="">Escoja Departamento</option>
+            </select>
+</div>
+
+<label className="blockblock" htmlFor="departamento">Departamento*</label>
+   <div class="mt-2.5">
+            <select name="departamento" onChange={handleChange} value={values.departamento} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <option value="">Seleccione</option>
               <option value="Cundinamarca">Cundinamarca</option>
-              <option value="Bogota DC">Bogota DC</option>
-              <option value="Atlantico">Atlantico</option>
+
             </select>
 
-            <label className="block" htmlFor="tipoid">Tipo de Identificación : </label>
-            <select name="tipoid" onChange={handleChange} value={values.tipoid}>
+            </div>
+
+            <label className="block" htmlFor="tipoid">Tipo de identificación * </label>
+            <select name="tipoid" onChange={handleChange} value={values.tipoid} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               <option value="">Seleccione </option>
               <option value="CC">CC</option>
+              <option value="RC">RC</option>
               <option value="CE">CE</option>
               <option value="TI">TI</option>
+                 <option value="PA">PA</option>
             </select>
 
-            <label className="block" htmlFor="numeroid">Numero de Identificación : </label>
+            <label className="block" htmlFor="numeroid">Número de Identificación * </label>
             <input
               type="text"
               name="numeroid"
@@ -145,9 +152,9 @@ function TaskForm_edit() {
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.numeroid}
-            />
+            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
-            <label htmlFor="nombre">Nombres y Apellidos : </label>
+<label htmlFor="nombre">Nombres y Apellidos * </label>
             <input
               type="text"
               name="nombre"
@@ -155,9 +162,8 @@ function TaskForm_edit() {
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.nombre}
-            />
-
-            <label htmlFor="telefono1">Numero de Telefono</label>
+            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+<label htmlFor="telefono1">Teléfono *</label>
             <input
               type="text"
               name="telefono1"
@@ -165,9 +171,10 @@ function TaskForm_edit() {
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.telefono1}
-            />
-
-            <label htmlFor="telefono2">Telefono 2</label>
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+           
+           
+           <label htmlFor="telefono2">Teléfono 2</label>
             <input
               type="text"
               name="telefono2"
@@ -175,9 +182,9 @@ function TaskForm_edit() {
               className="px-2 py-1 rounded-sm w-full"
               onChange={handleChange}
               value={values.telefono2}
-            />
+             class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
-            <label htmlFor="correoelectronico">Email </label>
+<label htmlFor="correoelectronico">Correo Electronico</label>
             <input
               type="text"
               name="correoelectronico"
@@ -185,10 +192,10 @@ function TaskForm_edit() {
               className="px-2 py-1 rounded-sm w-full"
               onChange={handleChange}
               value={values.correoelectronico}
-            />
+            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
             <label  className="block" htmlFor="gestante">Gestante : </label>
-            <select name="gestante" onChange={handleChange} value={values.gestante}>
+            <select name="gestante" onChange={handleChange} value={values.gestante} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               <option value="">Gestante ? </option>
               <option value="SI">Si</option>
               <option value="No">No</option>
@@ -208,7 +215,7 @@ function TaskForm_edit() {
             
             <label className="block" htmlFor="especialidad_formulo_medicamento">
               Especialidad quien Formulo el Medicamento </label>
-            <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}>
+            <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
               <option value="">Seleccione </option>
               <option value="MEDICINA GENERAL">MEDICINA GENERAL</option>
@@ -264,7 +271,7 @@ function TaskForm_edit() {
               placeholder="MD Medicamento"
               onChange={handleChange}
               value={values.md_medicamento}
-            />
+             class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
             <label htmlFor="md_medicamento"> Otro MD Medicamento  </label>
             <input
               id="md_medicamento_dos"
@@ -274,7 +281,7 @@ function TaskForm_edit() {
               placeholder="Otro MD Medicamento?"
               onChange={handleChange}
               value={values.md_medicamento_dos}
-            />
+             class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
 
             <label className="block" htmlFor="descripciones">Observaciones </label>
@@ -285,13 +292,13 @@ function TaskForm_edit() {
               placeholder=" Observaciones "
               onChange={handleChange}
               value={values.descripciones}
-            ></textarea>
+             class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
 
 
 
             <label className="block" htmlFor="description">
               Clasifiación del Caso </label>
-            <select name="description" onChange={handleChange} value={values.description}>
+            <select name="description" onChange={handleChange} value={values.description}  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
               <option value="">Seleccione </option>
               <option value="Medicamento agotado por laboratorio">Medicamento agotado por laboratorio</option>
@@ -310,7 +317,7 @@ function TaskForm_edit() {
 
             <label className="block" htmlFor="medico_del_caso">
               Medico del Caso </label>
-            <select name="medico_del_caso" onChange={handleChange} value={values.medico_del_caso}>
+            <select name="medico_del_caso" onChange={handleChange} value={values.medico_del_caso} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
               <option value="Medico Back">Medico Back</option>
            
@@ -324,7 +331,7 @@ function TaskForm_edit() {
               placeholder="observaciones_enfermera "
               onChange={handleChange}
               value={values.observaciones_enfermera}
-            ></textarea>
+             class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
 
 <br></br>
 <br></br>
