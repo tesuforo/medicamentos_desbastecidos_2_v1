@@ -72,11 +72,7 @@ function TaskForm_call_center() {
       
     
 
-       <div className="flex flex-wrap justify-center">
-  <div className="w-64 sm:w-4/12 px-16">
-    <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
-            </div>
-            </div>
+      
 
       <Formik
         initialValues={task}
@@ -115,9 +111,19 @@ function TaskForm_call_center() {
         {({ handleChange, handleSubmit,values, isSubmitting }) => (
           <form onSubmit={handleSubmit} className="bg-slate-300 max-w-sm rounded-md p-4 mx-auto mt-10">
 
+
+
+
+         <div className="flex flex-wrap justify-center">
+  <div class="h-auto max-w-full">
+    <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
+            </div>
+            </div>
+
             <h1 className="text-xl font-bold uppercase text-center">
               {params.id ? "Editar Solicitud" : "Formulario"}
             </h1>
+
 
             
            <div class="mx-auto max-w-2xl text-center">
