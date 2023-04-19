@@ -71,7 +71,7 @@ function TaskForm() {
     
 
        <div className="flex flex-wrap justify-center">
-  <div className="w-64 sm:w-0/0 px-0">
+  <div class="h-auto max-w-full">
     <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
             </div>
             </div>
