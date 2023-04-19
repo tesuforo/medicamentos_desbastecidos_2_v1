@@ -67,7 +67,26 @@ function TaskForm_call_center() {
 
  return (
     <div>
+
+
+         <div className="bg-neutral-400 flex justify-between px-20 py-4">
+      <Link to="/Call_center" className="text-white font-bold">
+     
+        <h1> 💊 Registro de Medicamentos Desabastecidos</h1>
+      </Link>
+
+      <ul className="flex gap-x-1">
+        <li>
          
+        </li>
+        <li>
+          <Link to="/Call_center" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Crear</Link>
+        </li>
+        
+      </ul>
+    </div>
+
+
       <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Bienvenido Call Center" }  </h1>
       
     
