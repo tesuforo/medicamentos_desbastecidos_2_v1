@@ -49,7 +49,7 @@ export const createTask = async (req, res) => {
     remite,
   } = req.body;
   const [result] = await pool.query(
-    "INSERT INTO tasks (title,departamento,tipoid,numeroid,nombre,telefono1,telefono2,correoelectronico,gestante,pertenece_programa,especialidad_formulo_medicamento,fecha_vigencia_formula,md_medicamento,descripciones,md_medicamento_dos) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+    "INSERT INTO tasks (title,departamento,tipoid,numeroid,nombre,telefono1,telefono2,correoelectronico,gestante,pertenece_programa,especialidad_formulo_medicamento,fecha_vigencia_formula,md_medicamento,descripciones,md_medicamento_dos,remite) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
     [
       title,
       departamento,
