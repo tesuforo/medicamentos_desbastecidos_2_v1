@@ -16,6 +16,8 @@ app.use(cors({
     origin: 'http://5.183.11.6:5173', credentials: true
 }));
 
+
+
 app.use(express.json());
 
 app.use(indexRoutes);

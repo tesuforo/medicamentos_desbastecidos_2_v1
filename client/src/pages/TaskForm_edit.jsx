@@ -21,7 +21,7 @@ function TaskForm_edit() {
           gestante: "",
           pertenece_programa: "",
           especialidad_formulo_medicamento: "",
-
+       
           md_medicamento: "",
           md_medicamento_dos: "",
           descripciones: "",
@@ -51,7 +51,7 @@ function TaskForm_edit() {
           gestante: task.gestante,
           pertenece_programa: task.pertenece_programa,
           especialidad_formulo_medicamento: task.especialidad_formulo_medicamento,
-
+        
           md_medicamento: task.md_medicamento,
           md_medicamento_dos: task.md_medicamento_dos,
           descripciones: task.descripciones,
@@ -68,7 +68,7 @@ function TaskForm_edit() {
  return (
     <div>
 
-      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitud " : "Nueva Solicitud" }  </h1>
+      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitud " : "Formulario " }  </h1>
 
       <Formik
         initialValues={task}
@@ -77,8 +77,8 @@ function TaskForm_edit() {
           console.log(values);
 
          if (params.id) {
-         await updateTask(params.id, values);
-
+         await updateTask(params.id, values); 
+       
          } else {
            await createTask(values);
          }
@@ -95,7 +95,7 @@ function TaskForm_edit() {
           gestante: "",
           pertenece_programa: "",
           especialidad_formulo_medicamento: "",
-
+          
           md_medicamento: "",
           md_medicamento_dos: "",
           descripciones: "",
@@ -112,21 +112,21 @@ function TaskForm_edit() {
             <h1 className="text-xl font-bold uppercase text-center">
               {params.id ? "Editar Solicitud" : "Nueva  Solicitud "}
             </h1>
-
-
-            <label className="block" htmlFor="title">Sede*</label>
+           
+           
+            <label className="block" htmlFor="title">Sede :</label>
             <select name="title" onChange={handleChange} value={values.title}>
-              <option value="">Seleccione</option>
-              <option value="Bienestar Soacha">Bienestar Soacha</option>
-
+              <option value="">Escoja su Sede</option>
+              <option value="Bienestar sur">Bienestar Sur </option>
+              <option value="Bienestar Norte">Bienestar Norte</option>
             </select>
 
-
-            <label className="block" htmlFor="departamento">Departamento*</label>
+            <label className="block" htmlFor="departamento">Departamento :</label>
             <select name="departamento" onChange={handleChange} value={values.departamento}>
-            <option value="">Seleccione</option>
+              <option value="">Escoja Departamento</option>
               <option value="Cundinamarca">Cundinamarca</option>
-
+              <option value="Bogota DC">Bogota DC</option>
+              <option value="Atlantico">Atlantico</option>
             </select>
 
             <label className="block" htmlFor="tipoid">Tipo de Identificación : </label>
@@ -205,7 +205,7 @@ function TaskForm_edit() {
             </select>
 
 
-
+            
             <label className="block" htmlFor="especialidad_formulo_medicamento">
               Especialidad quien Formulo el Medicamento </label>
             <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}>
@@ -251,7 +251,7 @@ function TaskForm_edit() {
 
             </select>
 
-
+        
 
 
 
@@ -313,7 +313,7 @@ function TaskForm_edit() {
             <select name="medico_del_caso" onChange={handleChange} value={values.medico_del_caso}>
 
               <option value="Medico Back">Medico Back</option>
-
+           
             </select>
 
              <label className="block" htmlFor="observaciones_enfermera">Observaciones Enfermeria</label>
@@ -330,11 +330,11 @@ function TaskForm_edit() {
 <br></br>
 
 
-            < button class="rounded-full"
-            type="submit"
+            < button class="rounded-full"   
+            type="submit" 
             disabled ={isSubmitting}
             className="block bg-indigo-500 px-2 py-1 text-white w-full rounded-md">
-
+              
               {isSubmitting ? "Guardando.." : "Guardar"}
               </button>
           </form>

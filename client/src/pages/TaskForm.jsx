@@ -65,19 +65,16 @@ function TaskForm() {
 
  return (
     <div>
+         
+      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Bienvenido" }  </h1>
+      
+    
 
-      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : " " }  </h1>
-
-
-      <div class="flex justify-center">
-        <figure class="mb-4 inline-block max-w-sm">
-          <img
-            src={formula1}
-            class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
-            alt="Taking up Water with a Spoon" />
-
-        </figure>
-      </div>
+       <div className="flex flex-wrap justify-center">
+  <div className="w-64 sm:w-4/12 px-16">
+    <img src={formula1} alt="..." className="shadow-lg rounded max-w-full h-auto align-middle border-none" />
+            </div>
+            </div>
 
       <Formik
         initialValues={task}
@@ -86,8 +83,8 @@ function TaskForm() {
           console.log(values);
 
          if (params.id) {
-         await updateTask(params.id, values);
-
+         await updateTask(params.id, values); 
+       
          } else {
            await createTask(values);
          }
@@ -115,29 +112,29 @@ function TaskForm() {
         {({ handleChange, handleSubmit,values, isSubmitting }) => (
           <form onSubmit={handleSubmit} className="bg-slate-300 max-w-sm rounded-md p-4 mx-auto mt-10">
 
-            <h3 className="text-xl font-bold uppercase text-center">
-              {params.id ? "Editar Solicitud" : "Solicitud de Reformulación"}
-            </h3>
-
+            <h1 className="text-xl font-bold uppercase text-center">
+              {params.id ? "Editar Solicitud" : "Formulario"}
+            </h1>
+           
 
             <label className="block" htmlFor="departamento">Departamento*</label>
-            <select name="departamento" onChange={handleChange} value={values.departamento} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <select name="departamento" onChange={handleChange} value={values.departamento}class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             <option value="">Seleccione</option>
               <option value="Cundinamarca">Cundinamarca</option>
 
             </select>
 
             <label className="block" htmlFor="title">Sede*</label>
-            <select name="title" onChange={handleChange} value={values.title} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <select name="title" onChange={handleChange} value={values.title}class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               <option value="">Seleccione</option>
               <option value="Bienestar Soacha">Bienestar Soacha</option>
 
             </select>
 
-
+           
 
             <label className="block" htmlFor="tipoid">Tipo de identificación * </label>
-            <select name="tipoid" onChange={handleChange} value={values.tipoid} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <select name="tipoid" onChange={handleChange} value={values.tipoid}>
               <option value="">Seleccione </option>
               <option value="CC">CC</option>
               <option value="RC">RC</option>
@@ -150,31 +147,31 @@ function TaskForm() {
             <input
               type="text"
               name="numeroid"
-              placeholder="identificación"
+              placeholder="Digite Numero de Identificación"
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.numeroid}
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+            />
 
             <label htmlFor="nombre">Nombres y Apellidos * </label>
             <input
               type="text"
               name="nombre"
-              placeholder="Nombre Apellido"
+              placeholder="Nombres y Apellidos"
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.nombre}
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+            />
 
             <label htmlFor="telefono1">Teléfono *</label>
             <input
               type="text"
               name="telefono1"
-              placeholder="310-123-1234"
+              placeholder="Celular"
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.telefono1}
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+            />
 
             <label htmlFor="telefono2">Teléfono 2</label>
             <input
@@ -184,27 +181,27 @@ function TaskForm() {
               className="px-2 py-1 rounded-sm w-full"
               onChange={handleChange}
               value={values.telefono2}
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+            />
 
             <label htmlFor="correoelectronico">Correo Electronico</label>
             <input
               type="text"
               name="correoelectronico"
-              placeholder="ejemplo@gmail.com"
+              placeholder="Correo Electronico"
               className="px-2 py-1 rounded-sm w-full"
               onChange={handleChange}
               value={values.correoelectronico}
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+            />
 
             <label  className="block" htmlFor="gestante">Gestante * </label>
-            <select name="gestante" onChange={handleChange} value={values.gestante} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <select name="gestante" onChange={handleChange} value={values.gestante}>
               <option value="">Gestante ? </option>
               <option value="SI">Si</option>
               <option value="No">No</option>
             </select>
 
-            <label className="block" htmlFor="pertenece_programa">Pertenece a un programa* </label>
-            <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <label className="block" htmlFor="pertenece_programa">Pertenece a un programa * </label>
+            <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa}>
 
               <option value="No pertenezco a algún programa">No pertenezco a algún programa </option>
               <option value="Hipertensión">Hipertensión</option>
@@ -213,7 +210,7 @@ function TaskForm() {
               <option value="Gestantes">Gestantes</option>
             </select>
 
-
+           
 
 
 
@@ -221,7 +218,7 @@ function TaskForm() {
 
             <label className="block" htmlFor="especialidad_formulo_medicamento">
               Especialidad quien Formulo el Medicamento </label>
-            <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}>
 
               <option value="">Seleccione </option>
               <option value="MEDICINA GENERAL">MEDICINA GENERAL</option>
@@ -263,33 +260,39 @@ function TaskForm() {
 
 
             </select>
+           
+
+    
+          
+
+
+<div class="flex justify-center">
+  <figure class="mb-4 inline-block max-w-sm">
+    <img
+      src={formula}
+      
+      class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
+      alt="Taking up Water with a Spoon" />
+       <h4> <  label className="block"  htmlFor="md_medicamento">MD Medicamento*, Ver Imagen </label> </h4>
+    <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
+      
+      <input
+              id="md_medicamento"
+              name="md_medicamento"
+              type="text"
+              className="px-2 py-1 rounded-sm w-full"
+              placeholder="Registrar"
+              onChange={handleChange}
+              value={values.md_medicamento}
+            />
+    </figcaption>
+  </figure>
+</div>
 
 
 
 
 
-            <div class="flex justify-center">
-              <figure class="mb-4 inline-block max-w-sm">
-                <img
-                  src={formula}
-
-                  class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
-                  alt="Taking up Water with a Spoon" />
-                   <h4> <  label className="block"  htmlFor="md_medicamento">Codigo*, ver imagen = recuadro rojo </label> </h4>
-                <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
-
-                  <input
-                          id="md_medicamento"
-                          name="md_medicamento"
-                          type="text"
-                          className="px-2 py-1 rounded-sm w-full"
-                          placeholder="MD1234"
-                          onChange={handleChange}
-                          value={values.md_medicamento}
-                          class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-                </figcaption>
-              </figure>
-            </div>
 
 
             <label htmlFor="md_medicamento"> Otro MD Medicamento  </label>
@@ -298,10 +301,10 @@ function TaskForm() {
               name="md_medicamento_dos"
               type="text"
               className="px-2 py-1 rounded-sm w-full"
-              placeholder="MD1234"
+              placeholder="Otro MD Medicamento?"
               onChange={handleChange}
               value={values.md_medicamento_dos}
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+            />
             <label className="block" htmlFor="fecha_vigencia_formula"> Fecha Vigencia Formula</label>
             <input
               id="fecha_vigencia_formula"
@@ -311,30 +314,31 @@ function TaskForm() {
               placeholder="Fecha Vigencia Formula"
               onChange={handleChange}
               value={values.fecha_vigencia_formula}
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
+            />
 
 
 
-
+        
 
 
             <label className="block" htmlFor="descripciones">Observaciones </label>
             <textarea
               name="descripciones"
               id="descripciones"
-              rows="4"
+              rows="3"
               placeholder=" Observaciones "
               onChange={handleChange}
-              value={values.descripciones} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+              value={values.descripciones}
+            ></textarea>
 
 
 
-            < button class="rounded-full"
-            type="submit"
+            < button class="rounded-full"   
+            type="submit" 
             disabled ={isSubmitting}
             className="block bg-indigo-500 px-2 py-1 text-white w-full rounded-md">
-
-              {isSubmitting ? "Enviando.." : "Enviar"}
+              
+              {isSubmitting ? "Guardando.." : "Guardar"}
               </button>
           </form>
         )}

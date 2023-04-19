@@ -1,32 +1,39 @@
 import { useEffect, useState } from "react";
 import TaskCard from "../components/TaskCard";
 import { useTasks } from "../context/TaskContext";
-
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function TasksPage() {
 
   const {tasks, loadTasks} = useTasks();
-
+ 
 
   useEffect(() => {
     loadTasks();
   }, []);
 
   function rederMain() {
-    if (tasks.length === 0) return <h1>No hay SOlicitudes</h1>;
+    if (tasks.length === 0) return <h1>No tasks yet</h1>;
     return tasks.map((task) => <TaskCard task={task} key={task.id} />);
+
+
+    
   }
   return (
+
+    
     <div >
-        <div>
-
-    </div>
-
-    <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+      <div>
+      
+  </div>
+        
+   
+<div class="hidden sm:mb-8 sm:flex sm:justify-center">
         <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-          Solicitudes para Revisión por parte de la enfermera, Medicamento Desabastecido
+          Solicitudes para Revisión por parte de la enfermera, Medicamento Desabastecido 
         </div>
       </div>
-
+      
       <div class="hidden sm:mb-8 sm:flex sm:justify-center">
         <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
            <a href="/Call_center" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Ingreso a Call Center <span aria-hidden="true">&rarr;</span></a>
@@ -39,6 +46,7 @@ function TasksPage() {
       </div>
 
       {rederMain()}
+      
     </div>
   );
 }
