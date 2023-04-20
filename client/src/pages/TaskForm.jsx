@@ -345,18 +345,20 @@ function TaskForm() {
 
   
  
-  <label class="relative inline-flex items-center mb-5 cursor-pointer">
+  
+        
+        <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
+        Al seleccionar esto, usted acepta nuestro tratamiento de datos y Política de Privacidad
+          <a href="https://bienestarips.com/wp-content/uploads/2023/04/MA-GJ-002-Manual-de-Tratamiento-de-Datos-Personales-2.pdf" class="font-semibold text-indigo-600"> Tratamiento de&nbsp;Datos</a>.
+          <a href="https://bienestarips.com/wp-content/uploads/2023/04/PO-GJ-002-Politica-Aviso-de-Privacidad-1.pdf" class="font-semibold text-indigo-600"> Política de &nbsp;Seguridad</a>.
+        </label>
+
+        <label class="relative inline-flex items-center mb-5 cursor-pointer">
   <input type="checkbox" value={values.done} class="sr-only peer"/>
   <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
   <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Acepta</span>
 </label>
 
-        
-        <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-        Al seleccionar esto, usted acepta nuestra
-          <a href="https://bienestarips.com/wp-content/uploads/2023/04/MA-GJ-002-Manual-de-Tratamiento-de-Datos-Personales-2.pdf" class="font-semibold text-indigo-600"> Política&nbsp;Privacida</a>.
-        </label>
-        
 
             < button class="rounded-full"   
             type="submit" 
