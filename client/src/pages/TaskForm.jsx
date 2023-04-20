@@ -354,7 +354,7 @@ function TaskForm() {
         
         <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
         Al seleccionar esto, usted acepta nuestra
-          <a href="https://bienestarips.com/wp-content/uploads/2023/04/MA-GJ-002-Manual-de-Tratamiento-de-Datos-Personales-2.pdf" class="font-semibold text-indigo-600">Privacida&nbsp;Politica</a>.
+          <a href="https://bienestarips.com/wp-content/uploads/2023/04/MA-GJ-002-Manual-de-Tratamiento-de-Datos-Personales-2.pdf" class="font-semibold text-indigo-600"> Política&nbsp;Privacida</a>.
         </label>
         
 
