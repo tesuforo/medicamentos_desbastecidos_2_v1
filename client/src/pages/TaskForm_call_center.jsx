@@ -362,9 +362,9 @@ function TaskForm_call_center() {
             </select>
             
             <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-        Al seleccionar esto, usted acepta nuestro tratamiento de datos y Política de Privacidad
+            Le informamos que al hacer uso de este canal, está aceptando la Política de Tratamiento y Protección de Datos Personales y Política de Privacidad de nuestra institución
           <a href="https://bienestarips.com/wp-content/uploads/2023/04/MA-GJ-002-Manual-de-Tratamiento-de-Datos-Personales-2.pdf" class="font-semibold text-indigo-600"> Tratamiento de&nbsp;Datos</a>.
-          <a href="https://bienestarips.com/wp-content/uploads/2023/04/PO-GJ-002-Politica-Aviso-de-Privacidad-1.pdf" class="font-semibold text-indigo-600"> Política de &nbsp;Seguridad</a>.
+          <a href="https://bienestarips.com/wp-content/uploads/2023/04/PO-GJ-002-Politica-Aviso-de-Privacidad-1.pdf" class="font-semibold text-indigo-600"> Política de &nbsp;Privacidad</a>.
         </label>
 
         <label class="relative inline-flex items-center mb-5 cursor-pointer">
