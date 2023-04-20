@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "./components/Navbar";
 import TaskForm_call_center from "./pages/TaskForm_call_center";
 import TaskForm_linea_de_frente from "./pages/TaskForm_linea_de_frente";
+import TaskForm_farmacia from "./pages/TaskForm_farmacia";
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Routes>
             <Route path="/" element={<TasksPage />} />
             <Route path="/new" element={<TaskForm/>} />
+             <Route path="/farmacia" element={<TaskForm_farmacia/>} />
             <Route path="/call_center" element={<TaskForm_call_center/>} />
            
             <Route path="/linea_de_frente" element={<TaskForm_linea_de_frente/>} />
