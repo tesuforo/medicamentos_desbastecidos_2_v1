@@ -346,9 +346,9 @@ function TaskForm_linea_de_frente() {
 
 
             <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-            Le informamos que al hacer uso de este canal, está aceptando la Política de Tratamiento y Protección de Datos Personales y Política de Privacidad de nuestra institución
-          <a href="https://bienestarips.com/wp-content/uploads/2023/04/MA-GJ-002-Manual-de-Tratamiento-de-Datos-Personales-2.pdf" class="font-semibold text-indigo-600"> Tratamiento de&nbsp;Datos</a>.
-          <a href="https://bienestarips.com/wp-content/uploads/2023/04/PO-GJ-002-Politica-Aviso-de-Privacidad-1.pdf" class="font-semibold text-indigo-600"> Política de &nbsp;Privacidad</a>.
+        Le informamos que al hacer uso de este canal, está aceptando la Política de Tratamiento y Protección de Datos Personales y Política de Privacidad de nuestra institución
+          <a href="https://bienestarips.com/wp-content/uploads/2023/04/MA-GJ-002-Manual-de-Tratamiento-de-Datos-Personales-2.pdf" class="font-semibold text-indigo-600"> <p class="underline ...">- Tratamiento de &nbsp;Datos</p></a>.
+          <a href="https://bienestarips.com/wp-content/uploads/2023/04/PO-GJ-002-Politica-Aviso-de-Privacidad-1.pdf" class="font-semibold text-indigo-600"> <p class="underline ...">- Política de &nbsp;Privacidad</p>  </a>.
         </label>
 
         <label class="relative inline-flex items-center mb-5 cursor-pointer">
