@@ -11,7 +11,7 @@ import formula1 from '../assets/img/form.png'
 
 
 
-function TaskForm_call_center() {
+function TaskForm_farmacia() {
 
   const {createTask, getTask,updateTask}  = useTasks();
 
@@ -31,7 +31,7 @@ function TaskForm_call_center() {
           md_medicamento: "",
           md_medicamento_dos: "",
           descripciones: "",
-          remite: "Call Center",
+          remite: "Farmacia",
   });
 
   const params = useParams()
@@ -70,7 +70,7 @@ function TaskForm_call_center() {
 
         
          
-      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Bienvenido Call Center" }  </h1>
+      <h1 className="text-3xl font-bold underline"> {params.id ?  "Revisar Solicitudes " : "Bienvenido Farmacia" }  </h1>
       
     
 
@@ -105,7 +105,7 @@ function TaskForm_call_center() {
           md_medicamento: "",
           md_medicamento_dos: "",
           descripciones: "",
-          remite:"Call Center",
+          remite:"Farmacia",
 
         });
         }}
@@ -130,7 +130,7 @@ function TaskForm_call_center() {
             
            <div class="mx-auto max-w-2xl text-center">
     
-    <p class="mt-2 text-lg leading-8 text-gray-600"> Agente de Call Center por favor registrar la  solicitud del paciente.</p>
+    <p class="mt-2 text-lg leading-8 text-gray-600"> Farmacia por favor registrar la  solicitud del paciente.</p>
   </div>
 
 
@@ -357,7 +357,7 @@ function TaskForm_call_center() {
               <label className="block" htmlFor="remite">Remite  </label>
             <select name="remite" onChange={handleChange} value={values.remite} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
-              <option value="Call Center">Call Center</option>
+              <option value="Farmacia">Call Center</option>
             
             </select>
             
@@ -393,7 +393,7 @@ function TaskForm_call_center() {
   );
 }
 
-export default TaskForm_call_center;
+export default TaskForm_farmacia;
 
 
 
