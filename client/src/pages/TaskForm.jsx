@@ -340,14 +340,18 @@ function TaskForm() {
               value={values.descripciones}
              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
 
-               <div class="flex h-6 items-center">
+               
        
-          <button type="button" class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" role="switch" aria-checked="true" aria-labelledby="switch-1-label">
-            <span class="sr-only">Acepta las Politicas de Privacidad</span>
-          
-            <span aria-hidden="true" class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
-          </button>
-        </div>
+         
+        
+        <label class="relative inline-flex items-center mr-5 cursor-pointer">
+  <input type="checkbox" value="" class="sr-only peer" checked/>
+  <div class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
+  <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Acepta</span>
+</label>
+
+
+        
         <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
         Al seleccionar esto, usted acepta nuestra
           <a href="https://bienestarips.com/wp-content/uploads/2023/04/MA-GJ-002-Manual-de-Tratamiento-de-Datos-Personales-2.pdf" class="font-semibold text-indigo-600">Privacida&nbsp;Politica</a>.

@@ -125,7 +125,7 @@ function TaskForm_linea_de_frente() {
 
 
             <label className="block" htmlFor="departamento">Departamento*</label>
-            <select name="departamento" onChange={handleChange} value={values.departamento}>
+            <select name="departamento" onChange={handleChange} value={values.departamento} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             <option value="">Seleccione</option>
               <option value="Cundinamarca">Cundinamarca</option>
 
@@ -141,7 +141,7 @@ function TaskForm_linea_de_frente() {
            
 
             <label className="block" htmlFor="tipoid">Tipo de identificación * </label>
-            <select name="tipoid" onChange={handleChange} value={values.tipoid}>
+            <select name="tipoid" onChange={handleChange} value={values.tipoid} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
               <option value="">Seleccione </option>
               <option value="CC">CC</option>
               <option value="RC">RC</option>
@@ -158,7 +158,7 @@ function TaskForm_linea_de_frente() {
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.numeroid}
-            />
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
             <label htmlFor="nombre">Nombres y Apellidos * </label>
             <input
@@ -168,7 +168,7 @@ function TaskForm_linea_de_frente() {
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.nombre}
-            />
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
             <label htmlFor="telefono1">Teléfono *</label>
             <input
@@ -178,7 +178,7 @@ function TaskForm_linea_de_frente() {
               className="px-4 py-2 rounded-sm w-full"
               onChange={handleChange}
               value={values.telefono1}
-            />
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
             <label htmlFor="telefono2">Teléfono 2</label>
             <input
@@ -188,7 +188,7 @@ function TaskForm_linea_de_frente() {
               className="px-2 py-1 rounded-sm w-full"
               onChange={handleChange}
               value={values.telefono2}
-            />
+             class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
             <label htmlFor="correoelectronico">Correo Electronico</label>
             <input
@@ -198,17 +198,17 @@ function TaskForm_linea_de_frente() {
               className="px-2 py-1 rounded-sm w-full"
               onChange={handleChange}
               value={values.correoelectronico}
-            />
+             class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
             <label  className="block" htmlFor="gestante">Gestante * </label>
-            <select name="gestante" onChange={handleChange} value={values.gestante}>
-              <option value="">Gestante ? </option>
+            <select name="gestante" onChange={handleChange} value={values.gestante}class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              <option value="">Seleccione </option>
               <option value="SI">Si</option>
               <option value="No">No</option>
             </select>
 
             <label className="block" htmlFor="pertenece_programa">Pertenece a un programa * </label>
-            <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa}>
+            <select name="pertenece_programa" onChange={handleChange} value={values.pertenece_programa} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
               <option value="No pertenezco a algún programa">No pertenezco a algún programa </option>
               <option value="Hipertensión">Hipertensión</option>
@@ -225,7 +225,7 @@ function TaskForm_linea_de_frente() {
 
             <label className="block" htmlFor="especialidad_formulo_medicamento">
               Especialidad quien Formulo el Medicamento </label>
-            <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento}>
+            <select name="especialidad_formulo_medicamento" onChange={handleChange} value={values.especialidad_formulo_medicamento} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
               <option value="">Seleccione </option>
               <option value="MEDICINA GENERAL">MEDICINA GENERAL</option>
@@ -311,7 +311,7 @@ function TaskForm_linea_de_frente() {
               placeholder="Otro MD Medicamento?"
               onChange={handleChange}
               value={values.md_medicamento_dos}
-            />
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
             <label className="block" htmlFor="fecha_vigencia_formula"> Fecha Vigencia Formula</label>
             <input
               id="fecha_vigencia_formula"
@@ -321,7 +321,7 @@ function TaskForm_linea_de_frente() {
               placeholder="Fecha Vigencia Formula"
               onChange={handleChange}
               value={values.fecha_vigencia_formula}
-            />
+              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
 
 
 
@@ -336,13 +336,27 @@ function TaskForm_linea_de_frente() {
               placeholder=" Observaciones "
               onChange={handleChange}
               value={values.descripciones}
-            ></textarea>
+            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
      <label className="block" htmlFor="remite">Remite  </label>
             <select name="remite" onChange={handleChange} value={values.remite}>
 
               <option value="Linea_de_frente">Linea de Frente</option>
             
             </select>
+
+            <div class="flex h-6 items-center">
+       
+       <button type="button" class="bg-gray-200 flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" role="switch" aria-checked="true" aria-labelledby="switch-1-label">
+         <span class="sr-only">Acepta las Politicas de Privacidad</span>
+       
+         <span aria-hidden="true" class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
+       </button>
+     </div>
+     <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
+     Al seleccionar esto, usted acepta nuestra
+       <a href="https://bienestarips.com/wp-content/uploads/2023/04/MA-GJ-002-Manual-de-Tratamiento-de-Datos-Personales-2.pdf" class="font-semibold text-indigo-600">Privacida&nbsp;Politica</a>.
+     </label>
+
 
 
 
