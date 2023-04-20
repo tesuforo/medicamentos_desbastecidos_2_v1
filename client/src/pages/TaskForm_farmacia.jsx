@@ -216,7 +216,7 @@ function TaskForm_farmacia() {
 
             <label  className="block" htmlFor="gestante">Gestante * </label>
             <select name="gestante" onChange={handleChange} value={values.gestante} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-              <option value="">Gestante ? </option>
+              <option value="">Seleccione </option>
               <option value="SI">Si</option>
               <option value="No">No</option>
             </select>
@@ -294,7 +294,7 @@ function TaskForm_farmacia() {
       
       class="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
       alt="Taking up Water with a Spoon" />
-       <h4> <  label className="block"  htmlFor="md_medicamento">Codigo Medicamento*, Ver Imagen </label> </h4>
+       <h4> <  label className="block"  htmlFor="md_medicamento">Codigo Médicamento*, Ver Imagen </label> </h4>
     <figcaption class="text-sm text-neutral-600 dark:text-neutral-400">
       
       <input
@@ -316,7 +316,7 @@ function TaskForm_farmacia() {
 
 
 
-            <label htmlFor="md_medicamento"> Otro MD Medicamento  </label>
+            <label htmlFor="md_medicamento"> Otro MD Médicamento  </label>
             <input
               id="md_medicamento_dos"
               name="md_medicamento_dos"
@@ -357,7 +357,7 @@ function TaskForm_farmacia() {
               <label className="block" htmlFor="remite">Remite  </label>
             <select name="remite" onChange={handleChange} value={values.remite} class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
 
-              <option value="Farmacia">Call Center</option>
+              <option value="Farmacia">Farmacia</option>
             
             </select>
             
